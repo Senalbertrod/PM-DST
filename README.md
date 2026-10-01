@@ -16,8 +16,17 @@ It adds two retro, Casio‑style watch face complications, plus a simple compani
 
 | Complication | What it shows | Watch face slots |
 |---|---|---|
-| **AM / PM** | `AM` or `PM` for your current local time | Circular, Rectangular, Inline |
+| **AM / PM** | `AM` or `PM` for your current local time, in the style you pick | Circular, Rectangular, Inline |
 | **DST Status** | `DST` while Daylight Saving Time is active; blank during standard time | Circular, Rectangular, Inline |
+
+- **Four AM / PM styles** to choose from when you add the complication:
+
+  | Style | Afternoon/evening | Morning |
+  |---|---|---|
+  | Capital, no dots | `PM` | `AM` |
+  | Capital, with dots | `P.M.` | `A.M.` |
+  | Lowercase, no dots | `pm` | `am` |
+  | Lowercase, with dots | `p.m.` | `a.m.` |
 
 - Bold, monospaced type for a vintage digital‑watch look.
 - Refreshes exactly on the hour, with a 72‑hour schedule queued ahead, so the display flips at the right moment with minimal battery use.
@@ -48,14 +57,14 @@ docs/                   Images for this README
 - Xcode with the watchOS 26 SDK or later
 - Watch app: watchOS 27.0+
 - Widget extension: watchOS 26.4+
-- Built with SwiftUI and WidgetKit. No third‑party dependencies.
+- Built with SwiftUI, WidgetKit and App Intents. No third‑party dependencies.
 
 ## Build & run
 
 1. Clone the repo and open `PM & DST.xcodeproj` in Xcode.
 2. Under **Signing & Capabilities**, set your own development team for both targets (and change the bundle identifiers if needed).
 3. Pick the **PM & DST Watch App** scheme and run it on a paired Apple Watch or the watchOS Simulator.
-4. On the watch, edit a watch face, tap a complication slot, and choose **AM / PM** or **DST Status** under PM & DST.
+4. On the watch, edit a watch face, tap a complication slot, and choose **AM / PM** (then a style: `PM`, `P.M.`, `pm` or `p.m.`) or **DST Status** under PM & DST.
 
 To try the complications on their own, run the **WatchWidgetsExtension** scheme.
 
