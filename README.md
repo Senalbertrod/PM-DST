@@ -8,6 +8,8 @@ It adds two retro, Casio‑style watch face complications, plus a simple compani
   <img src="PM%20%26%20DST%20Watch%20App/Assets.xcassets/AppIcon.appiconset/PM%20%40%20DST%20(1).png" alt="PM & DST app icon" width="160">
 </p>
 
+![PM & DST complications on a watch face](docs/complications.png)
+
 ## Features
 
 ### Complications
@@ -38,6 +40,7 @@ WatchWidgets/           WidgetKit extension with the two complications
   WatchWidgets.swift    Timeline provider, AM/PM widget, DST widget, widget bundle
   Info.plist
 PM & DST.xcodeproj/     Xcode project and shared schemes
+docs/                   Images for this README
 ```
 
 ## Requirements
