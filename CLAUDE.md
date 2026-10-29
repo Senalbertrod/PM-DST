@@ -15,6 +15,7 @@ Apple Watch app with AM/PM and DST Status complications (widget is named "PM & D
 - 1.0 is the first release, then 1.1, 1.2, and so on.
 - Every update gets a "What's New" list (the README's Versions section).
 - The build number goes up by 1 on every upload.
+- Every update: change the version and build number on both the iPhone wrapper target "PM & DST" and the "PM & DST Watch App" target, so they match. Archive with the "PM & DST" scheme.
 
 ## Senalbert's projects
 
