@@ -10,6 +10,7 @@
 		12CA6AB42F96AD9E0069F1EB /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CA6AB32F96AD9E0069F1EB /* WidgetKit.framework */; };
 		12CA6AB62F96AD9E0069F1EB /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CA6AB52F96AD9E0069F1EB /* SwiftUI.framework */; };
 		12CA6AC32F96AD9F0069F1EB /* WatchWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 12CA6AB12F96AD9E0069F1EB /* WatchWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0F9B39D01EAFD50D7A3A0A1E /* PM & DST Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 12CA6A932F96A9510069F1EB /* PM & DST Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -19,6 +20,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 12CA6AB02F96AD9E0069F1EB;
 			remoteInfo = WatchWidgetsExtension;
+		};
+		12C7BBD01C3EED3BBFEFAFC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12CA6A872F96A9510069F1EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12CA6A922F96A9510069F1EB;
+			remoteInfo = "PM & DST Watch App";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -34,6 +42,17 @@
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BFB5C1528D6BE2F0727DA9CC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0F9B39D01EAFD50D7A3A0A1E /* PM & DST Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +60,7 @@
 		12CA6AB12F96AD9E0069F1EB /* WatchWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WatchWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		12CA6AB32F96AD9E0069F1EB /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		12CA6AB52F96AD9E0069F1EB /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		6F8AC16B95E9C320C0F837B2 /* PM & DST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PM & DST.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -102,6 +122,7 @@
 		12CA6A8E2F96A9510069F1EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				6F8AC16B95E9C320C0F837B2 /* PM & DST.app */,
 				12CA6A932F96A9510069F1EB /* PM & DST Watch App.app */,
 				12CA6AB12F96AD9E0069F1EB /* WatchWidgetsExtension.appex */,
 			);
@@ -166,6 +187,25 @@
 			productReference = 12CA6AB12F96AD9E0069F1EB /* WatchWidgetsExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		0B1A3504F4529852BCC0816B /* PM & DST */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72C3396AB1B1B67E0066D61F /* Build configuration list for PBXNativeTarget "PM & DST" */;
+			buildPhases = (
+				5FD8983229C197AB83FC2ABA /* Resources */,
+				BFB5C1528D6BE2F0727DA9CC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAA7E8802FE5C64B9189779E /* PBXTargetDependency */,
+			);
+			name = "PM & DST";
+			packageProductDependencies = (
+			);
+			productName = "PM & DST";
+			productReference = 6F8AC16B95E9C320C0F837B2 /* PM & DST.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,6 +216,9 @@
 				LastSwiftUpdateCheck = 2640;
 				LastUpgradeCheck = 2700;
 				TargetAttributes = {
+					0B1A3504F4529852BCC0816B = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
 					12CA6A922F96A9510069F1EB = {
 						CreatedOnToolsVersion = 26.4.1;
 					};
@@ -198,6 +241,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				0B1A3504F4529852BCC0816B /* PM & DST */,
 				12CA6A922F96A9510069F1EB /* PM & DST Watch App */,
 				12CA6AB02F96AD9E0069F1EB /* WatchWidgetsExtension */,
 			);
@@ -213,6 +257,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		12CA6AAF2F96AD9E0069F1EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FD8983229C197AB83FC2ABA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -243,6 +294,11 @@
 			isa = PBXTargetDependency;
 			target = 12CA6AB02F96AD9E0069F1EB /* WatchWidgetsExtension */;
 			targetProxy = 12CA6AC12F96AD9F0069F1EB /* PBXContainerItemProxy */;
+		};
+		EAA7E8802FE5C64B9189779E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12CA6A922F96A9510069F1EB /* PM & DST Watch App */;
+			targetProxy = 12C7BBD01C3EED3BBFEFAFC8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -377,15 +433,15 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "PM & DST";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.senalbert.Simple-AM-PM---DST.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.senalbert.PM---DST.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -410,15 +466,15 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "PM & DST";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.senalbert.Simple-AM-PM---DST.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.senalbert.PM---DST.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -452,7 +508,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.senalbert.Simple-AM-PM---DST.watchkitapp.WatchWidgets";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.senalbert.PM---DST.watchkitapp.WatchWidgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -484,7 +540,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.senalbert.Simple-AM-PM---DST.watchkitapp.WatchWidgets";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.senalbert.PM---DST.watchkitapp.WatchWidgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -496,6 +552,45 @@
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 26.4;
+			};
+			name = Release;
+		};
+		2EF88C6040CC8DC6446A99CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8W85QPUG6S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "PM & DST";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.senalbert.PM---DST";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7FA2E2BDAC4207D7FFE889CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8W85QPUG6S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "PM & DST";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.senalbert.PM---DST";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -525,6 +620,15 @@
 			buildConfigurations = (
 				12CA6AC52F96AD9F0069F1EB /* Debug */,
 				12CA6AC62F96AD9F0069F1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72C3396AB1B1B67E0066D61F /* Build configuration list for PBXNativeTarget "PM & DST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EF88C6040CC8DC6446A99CB /* Debug */,
+				7FA2E2BDAC4207D7FFE889CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
