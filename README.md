@@ -5,7 +5,7 @@ A tiny Apple Watch app that answers two questions at a glance: **is it AM or PM?
 It adds two retro, Casio‑style watch face complications, plus a simple companion app with a live clock.
 
 <p align="center">
-  <img src="PM%20%26%20DST%20Watch%20App/Assets.xcassets/AppIcon.appiconset/PM%20%40%20DST%20(1).png" alt="PM & DST app icon" width="160">
+  <img src="PM%20%26%20DST%20Watch%20App/Assets.xcassets/AppIcon.appiconset/pm-dst-icon-1024.png" alt="PM & DST app icon" width="160">
 </p>
 
 ![PM & DST complications on a watch face](docs/complications.png)
@@ -37,6 +37,8 @@ It adds two retro, Casio‑style watch face complications, plus a simple compani
 
 - A live clock that ticks every second, in green monospaced digits.
 - A **Daylight Saving: ON / OFF** indicator underneath: green when on, gray when off.
+- A short **Add to watch face** how-to (three steps) below the clock.
+- In English and Spanish. The app screen and the complication names follow the watch's language; the AM/PM and DST on the watch face stay the same in both.
 
 ## Project structure
 
@@ -84,6 +86,7 @@ PM & DST has no accounts, ads, analytics or network code, and asks for no permis
 | Version | What's new |
 | --- | --- |
 | 1.0 | First App Store release. |
+| 1.1 | Now in Spanish. A short "Add to watch face" how-to on the app screen. |
 
 ## Author
 

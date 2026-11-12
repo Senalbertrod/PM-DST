@@ -1,0 +1,76 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "AM / PM" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AM / PM"
+          }
+        }
+      }
+    },
+    "Displays AM or PM in a retro font: PM, P.M., pm or p.m." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muestra AM o PM con letra retro: PM, P.M., pm o p.m."
+          }
+        }
+      }
+    },
+    "DST Status" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Horario de verano"
+          }
+        }
+      }
+    },
+    "Displays DST when Daylight Saving Time is active." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muestra DST cuando el horario de verano está activo."
+          }
+        }
+      }
+    },
+    "AM / PM Style" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estilo AM / PM"
+          }
+        }
+      }
+    },
+    "Choose how AM and PM are written." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elige cómo se escriben AM y PM."
+          }
+        }
+      }
+    },
+    "Style" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estilo"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
